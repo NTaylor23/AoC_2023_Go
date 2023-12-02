@@ -32,8 +32,7 @@ func parseLine(line string) (bool, int) {
 func Day02() {
 	path := "./inputs/day02.txt"
 	input := util.ReadInput(path)
-	p1_val := 0
-	p2_val := 0
+	p1_val, p2_val := 0, 0
 	for i, line := range input {
 		isValid, power := parseLine(line)
 		if isValid {
