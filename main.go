@@ -17,4 +17,5 @@ func timer(f fn) {
 
 func main() {
 	timer(days.Day01)
+	timer(days.Day02)
 }
