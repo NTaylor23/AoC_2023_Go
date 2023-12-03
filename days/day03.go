@@ -35,7 +35,6 @@ func Day03() {
 					adjacents = append(adjacents, input[i][numPos[0]:numPos[1]])
 				}
 			}
-
 		}
 		if len(adjacents) == 2 {
 			n1, _ := strconv.Atoi(adjacents[0])

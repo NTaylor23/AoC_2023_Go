@@ -41,6 +41,6 @@ func Day02() {
 		p2_val += power
 	}
 
-	fmt.Printf("Day 2:\n\tPart 1: The sum of the the IDs of valid games is %d.\n", p1_val)
+	fmt.Printf("Day 2:\n\tPart 1: The sum of the IDs of valid games is %d.\n", p1_val)
 	fmt.Printf("\tPart 2: The sum of the powers of these games is %d.\n", p2_val)
 }
