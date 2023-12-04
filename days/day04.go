@@ -10,8 +10,6 @@ import (
 	"github.com/hashicorp/go-set/v2"
 )
 
-// the demo input is different from the main input,
-// and the actual numbers start at a different index (10 vs 7)
 var STARTS_AT_IDX int = 10
 
 func Day04() {
