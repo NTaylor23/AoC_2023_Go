@@ -3,8 +3,6 @@ package days
 import (
 	"AoC_2023_Go/util"
 	"fmt"
-	"math"
-	"regexp"
 	"strings"
 
 	"github.com/hashicorp/go-set/v2"
@@ -15,19 +13,19 @@ var STARTS_AT_IDX int = 10
 func Day04() {
 	path := "./inputs/day04.txt"
 	input := util.ReadInput(path)
-
-	nPat := regexp.MustCompile(`(\d+)`)
 	cache := make([]int, len(input))
 	p1_val := 0
-	
+
 	for card, line := range input {
 		cache[card]++
 		s := strings.Split(line, " | ")
-		matches := set.From[string](
-			nPat.FindAllString(s[1], -1)).Intersect(
-				set.From[string](nPat.FindAllString(s[0][STARTS_AT_IDX:], -1)),
+		matches := set.From[int](
+			util.AtoiIter(strings.Fields(s[1]))).Intersect(
+			set.From[int](util.AtoiIter(strings.Fields(s[0][STARTS_AT_IDX:]))),
 		).Size()
-		p1_val += int(1 * math.Pow(2, float64(matches - 1)))
+		if matches > 0 {
+			p1_val += 1 << (matches - 1)
+		}
 		for i := card + 1; i < card+matches+1; i++ {
 			cache[i] += cache[card]
 		}
