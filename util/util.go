@@ -2,8 +2,9 @@ package util
 
 import (
 	"bufio"
-    "log"
-    "os"
+	"log"
+	"os"
+	"strconv"
 	"strings"
 
 	"golang.org/x/exp/constraints"
@@ -37,4 +38,23 @@ func Sum[T constraints.Ordered](numbers []T) T {
         total += number
     }
     return total
+}
+
+func AtoiIter(numbers []string) []int {
+	res := make([]int, len(numbers))
+	for i, n := range numbers {
+		conv, err := strconv.Atoi(n)
+		if err != nil {
+			log.Fatalf("could not convert %s to integer", n)
+		}
+		res[i] = conv
+	}
+	return res
+}
+
+func AbsVal(n int) int {
+	if n < 0 {
+		return -n
+	}
+	return n
 }
