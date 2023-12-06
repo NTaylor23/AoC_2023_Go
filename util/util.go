@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"log"
 	"os"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -57,4 +58,9 @@ func AbsVal(n int) int {
 		return -n
 	}
 	return n
+}
+
+func IntsInString(s string) []int {
+	nPat := regexp.MustCompile(`(\d+)`)
+	return AtoiIter(nPat.FindAllString(s, -1))
 }

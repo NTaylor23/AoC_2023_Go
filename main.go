@@ -20,5 +20,6 @@ func main() {
 	// timer(days.Day02)
 	// timer(days.Day03)
 	// timer(days.Day04)
-	timer(days.Day05)
+	// timer(days.Day05)
+	timer(days.Day06)
 }

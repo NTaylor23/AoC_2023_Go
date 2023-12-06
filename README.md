@@ -7,3 +7,4 @@
 |[Gear Ratios](https://adventofcode.com/2023/day/3)|[day03.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day03.go)|✅|✅|1.36|
 |[Scratchcards](https://adventofcode.com/2023/day/4)|[day04.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day04.go)|✅|✅|0.74|
 |[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)|[day05.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day05.go)|✅|🙀|Hmm|
+|[Wait For It](https://adventofcode.com/2023/day/6)|[day06.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day06.go)|✅|✅|26.95|
