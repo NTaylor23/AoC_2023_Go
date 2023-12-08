@@ -9,3 +9,4 @@
 |[If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)|[day05.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day05.go)|✅|🙀|Hmm|
 |[Wait For It](https://adventofcode.com/2023/day/6)|[day06.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day06.go)|✅|✅|0.53|
 |[Camel Cards](https://adventofcode.com/2023/day/7)|[day07.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day07.go)|✅|✅|1.90|
+|[Haunted Wasteland](https://adventofcode.com/2023/day/8)|[day08.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day08.go)|✅|✅|5.38|

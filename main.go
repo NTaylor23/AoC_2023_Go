@@ -23,4 +23,5 @@ func main() {
 	timer(days.Day05)
 	timer(days.Day06)
 	timer(days.Day07)
+	timer(days.Day08)
 }
