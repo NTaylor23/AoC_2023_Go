@@ -12,14 +12,13 @@ func getHistory(nums []int) (int, int) {
 
 	l, r := 0, len(nums)-1
 
-	for nums[0] != 0 || nums[len(nums)-1] != 0 {
+	for nums[0] != 0 || nums[r] != 0 {
 		for l < r {
 			nums[l] = nums[l+1] - nums[l]
 			l++
 		}
 		lastElements = append(lastElements, nums[r-1])
 		firstElements = append(firstElements, nums[0])
-		nums = nums[:r]
 		r--
 		l = 0
 	}
