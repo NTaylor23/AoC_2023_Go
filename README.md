@@ -11,3 +11,4 @@
 |[Camel Cards](https://adventofcode.com/2023/day/7)|[day07.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day07.go)|✅|✅|1.90|
 |[Haunted Wasteland](https://adventofcode.com/2023/day/8)|[day08.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day08.go)|✅|✅|5.38|
 |[Mirage Maintenance](https://adventofcode.com/2023/day/9)|[day09.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day09.go)|✅|✅|0.35|
+|[Pipe Maze](https://adventofcode.com/2023/day/10)|[day10.go](https://github.com/NTaylor23/AoC_2023_Go/blob/main/days/day10.go)|✅|✅|8.11|
