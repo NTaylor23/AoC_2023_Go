@@ -3,6 +3,7 @@ package days
 import (
 	"AoC_2023_Go/util"
 	"fmt"
+	"slices"
 	"strings"
 
 	"github.com/golang-collections/collections/stack"
@@ -87,17 +88,17 @@ func Day10() {
 				continue
 			}
 
-			crosses := 0
+			countIntersect := 0
 			ty, tx := y, x
 			for ty < m && tx < n {
 				tmp := input[ty][tx]
-				if tmp != 'L' && tmp != '7' && seen.Contains(Pos{ty, tx}) {
-					crosses++
+				if !slices.Contains([]byte{'L', '7'}, tmp) && seen.Contains(Pos{ty, tx}) {
+					countIntersect++
 				}
 				ty++
 				tx++
 			}
-			p2_val += crosses % 2
+			p2_val += countIntersect % 2
 		}
 	}
 
